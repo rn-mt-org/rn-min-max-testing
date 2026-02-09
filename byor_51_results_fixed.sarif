@@ -1,0 +1,1202 @@
+{
+  "$schema": "https://raw.githubusercontent.com/oasis-tcs/sarif-spec/master/Schemata/sarif-schema-2.1.0.json",
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Slither",
+          "informationUri": "https://github.com/crytic/slither",
+          "version": "0.10.0",
+          "rules": [
+            {
+              "id": "1-0-incorrect-equality",
+              "name": "incorrect-equality",
+              "properties": {
+                "precision": "very-high",
+                "security-severity": "4.0"
+              },
+              "shortDescription": {
+                "text": "Dangerous strict equalities"
+              },
+              "help": {
+                "text": "1-0-incorrect-equality help text"
+              }
+            },
+            {
+              "id": "1-1-reentrancy-no-eth",
+              "name": "reentrancy-no-eth",
+              "properties": {
+                "precision": "high",
+                "security-severity": "4.0"
+              },
+              "shortDescription": {
+                "text": "Reentrancy vulnerabilities"
+              },
+              "help": {
+                "text": "1-1-reentrancy-no-eth help text http://example.com."
+              }
+            }
+          ]
+        }
+      },
+      "results": [
+        {
+          "ruleId": "1-0-0",
+          "message": {
+            "text": "1-0-0 message text",
+            "markdown": "1-0-0 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 217,
+                  "endLine": 243
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab0"
+          }
+        },
+        {
+          "ruleId": "1-1-1",
+          "message": {
+            "text": "1-1-1 message text",
+            "markdown": "1-1-1 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 218,
+                  "endLine": 244
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab1"
+          }
+        },
+        {
+          "ruleId": "1-0-2",
+          "message": {
+            "text": "1-0-2 message text",
+            "markdown": "1-0-2 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 219,
+                  "endLine": 245
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab2"
+          }
+        },
+        {
+          "ruleId": "1-1-3",
+          "message": {
+            "text": "1-1-3 message text",
+            "markdown": "1-1-3 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 220,
+                  "endLine": 246
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab3"
+          }
+        },
+        {
+          "ruleId": "1-0-4",
+          "message": {
+            "text": "1-0-4 message text",
+            "markdown": "1-0-4 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 221,
+                  "endLine": 247
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab4"
+          }
+        },
+        {
+          "ruleId": "1-1-5",
+          "message": {
+            "text": "1-1-5 message text",
+            "markdown": "1-1-5 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 222,
+                  "endLine": 248
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab5"
+          }
+        },
+        {
+          "ruleId": "1-0-6",
+          "message": {
+            "text": "1-0-6 message text",
+            "markdown": "1-0-6 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 223,
+                  "endLine": 249
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab6"
+          }
+        },
+        {
+          "ruleId": "1-1-7",
+          "message": {
+            "text": "1-1-7 message text",
+            "markdown": "1-1-7 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 224,
+                  "endLine": 250
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab7"
+          }
+        },
+        {
+          "ruleId": "1-0-8",
+          "message": {
+            "text": "1-0-8 message text",
+            "markdown": "1-0-8 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 225,
+                  "endLine": 251
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab8"
+          }
+        },
+        {
+          "ruleId": "1-1-9",
+          "message": {
+            "text": "1-1-9 message text",
+            "markdown": "1-1-9 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 226,
+                  "endLine": 252
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab9"
+          }
+        },
+        {
+          "ruleId": "1-0-10",
+          "message": {
+            "text": "1-0-10 message text",
+            "markdown": "1-0-10 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 227,
+                  "endLine": 253
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab10"
+          }
+        },
+        {
+          "ruleId": "1-1-11",
+          "message": {
+            "text": "1-1-11 message text",
+            "markdown": "1-1-11 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 228,
+                  "endLine": 254
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab11"
+          }
+        },
+        {
+          "ruleId": "1-0-12",
+          "message": {
+            "text": "1-0-12 message text",
+            "markdown": "1-0-12 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 229,
+                  "endLine": 255
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab12"
+          }
+        },
+        {
+          "ruleId": "1-1-13",
+          "message": {
+            "text": "1-1-13 message text",
+            "markdown": "1-1-13 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 230,
+                  "endLine": 256
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab13"
+          }
+        },
+        {
+          "ruleId": "1-0-14",
+          "message": {
+            "text": "1-0-14 message text",
+            "markdown": "1-0-14 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 231,
+                  "endLine": 257
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab14"
+          }
+        },
+        {
+          "ruleId": "1-1-15",
+          "message": {
+            "text": "1-1-15 message text",
+            "markdown": "1-1-15 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 232,
+                  "endLine": 258
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab15"
+          }
+        },
+        {
+          "ruleId": "1-0-16",
+          "message": {
+            "text": "1-0-16 message text",
+            "markdown": "1-0-16 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 233,
+                  "endLine": 259
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab16"
+          }
+        },
+        {
+          "ruleId": "1-1-17",
+          "message": {
+            "text": "1-1-17 message text",
+            "markdown": "1-1-17 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 234,
+                  "endLine": 260
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab17"
+          }
+        },
+        {
+          "ruleId": "1-0-18",
+          "message": {
+            "text": "1-0-18 message text",
+            "markdown": "1-0-18 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 235,
+                  "endLine": 261
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab18"
+          }
+        },
+        {
+          "ruleId": "1-1-19",
+          "message": {
+            "text": "1-1-19 message text",
+            "markdown": "1-1-19 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 236,
+                  "endLine": 262
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab19"
+          }
+        },
+        {
+          "ruleId": "1-0-20",
+          "message": {
+            "text": "1-0-20 message text",
+            "markdown": "1-0-20 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 237,
+                  "endLine": 263
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab20"
+          }
+        },
+        {
+          "ruleId": "1-1-21",
+          "message": {
+            "text": "1-1-21 message text",
+            "markdown": "1-1-21 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 238,
+                  "endLine": 264
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab21"
+          }
+        },
+        {
+          "ruleId": "1-0-22",
+          "message": {
+            "text": "1-0-22 message text",
+            "markdown": "1-0-22 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 239,
+                  "endLine": 265
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab22"
+          }
+        },
+        {
+          "ruleId": "1-1-23",
+          "message": {
+            "text": "1-1-23 message text",
+            "markdown": "1-1-23 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 240,
+                  "endLine": 266
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab23"
+          }
+        },
+        {
+          "ruleId": "1-0-24",
+          "message": {
+            "text": "1-0-24 message text",
+            "markdown": "1-0-24 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 241,
+                  "endLine": 267
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab24"
+          }
+        },
+        {
+          "ruleId": "1-1-25",
+          "message": {
+            "text": "1-1-25 message text",
+            "markdown": "1-1-25 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 242,
+                  "endLine": 268
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab25"
+          }
+        },
+        {
+          "ruleId": "1-0-26",
+          "message": {
+            "text": "1-0-26 message text",
+            "markdown": "1-0-26 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 243,
+                  "endLine": 269
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab26"
+          }
+        },
+        {
+          "ruleId": "1-1-27",
+          "message": {
+            "text": "1-1-27 message text",
+            "markdown": "1-1-27 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 244,
+                  "endLine": 270
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab27"
+          }
+        },
+        {
+          "ruleId": "1-0-28",
+          "message": {
+            "text": "1-0-28 message text",
+            "markdown": "1-0-28 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 245,
+                  "endLine": 271
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab28"
+          }
+        },
+        {
+          "ruleId": "1-1-29",
+          "message": {
+            "text": "1-1-29 message text",
+            "markdown": "1-1-29 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 246,
+                  "endLine": 272
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab29"
+          }
+        },
+        {
+          "ruleId": "1-0-30",
+          "message": {
+            "text": "1-0-30 message text",
+            "markdown": "1-0-30 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 247,
+                  "endLine": 273
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab30"
+          }
+        },
+        {
+          "ruleId": "1-1-31",
+          "message": {
+            "text": "1-1-31 message text",
+            "markdown": "1-1-31 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 248,
+                  "endLine": 274
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab31"
+          }
+        },
+        {
+          "ruleId": "1-0-32",
+          "message": {
+            "text": "1-0-32 message text",
+            "markdown": "1-0-32 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 249,
+                  "endLine": 275
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab32"
+          }
+        },
+        {
+          "ruleId": "1-1-33",
+          "message": {
+            "text": "1-1-33 message text",
+            "markdown": "1-1-33 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 250,
+                  "endLine": 276
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab33"
+          }
+        },
+        {
+          "ruleId": "1-0-34",
+          "message": {
+            "text": "1-0-34 message text",
+            "markdown": "1-0-34 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 251,
+                  "endLine": 277
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab34"
+          }
+        },
+        {
+          "ruleId": "1-1-35",
+          "message": {
+            "text": "1-1-35 message text",
+            "markdown": "1-1-35 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 252,
+                  "endLine": 278
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab35"
+          }
+        },
+        {
+          "ruleId": "1-0-36",
+          "message": {
+            "text": "1-0-36 message text",
+            "markdown": "1-0-36 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 253,
+                  "endLine": 279
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab36"
+          }
+        },
+        {
+          "ruleId": "1-1-37",
+          "message": {
+            "text": "1-1-37 message text",
+            "markdown": "1-1-37 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 254,
+                  "endLine": 280
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab37"
+          }
+        },
+        {
+          "ruleId": "1-0-38",
+          "message": {
+            "text": "1-0-38 message text",
+            "markdown": "1-0-38 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 255,
+                  "endLine": 281
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab38"
+          }
+        },
+        {
+          "ruleId": "1-1-39",
+          "message": {
+            "text": "1-1-39 message text",
+            "markdown": "1-1-39 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 256,
+                  "endLine": 282
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab39"
+          }
+        },
+        {
+          "ruleId": "1-0-40",
+          "message": {
+            "text": "1-0-40 message text",
+            "markdown": "1-0-40 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 257,
+                  "endLine": 283
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab40"
+          }
+        },
+        {
+          "ruleId": "1-1-41",
+          "message": {
+            "text": "1-1-41 message text",
+            "markdown": "1-1-41 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 258,
+                  "endLine": 284
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab41"
+          }
+        },
+        {
+          "ruleId": "1-0-42",
+          "message": {
+            "text": "1-0-42 message text",
+            "markdown": "1-0-42 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 259,
+                  "endLine": 285
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab42"
+          }
+        },
+        {
+          "ruleId": "1-1-43",
+          "message": {
+            "text": "1-1-43 message text",
+            "markdown": "1-1-43 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 260,
+                  "endLine": 286
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab43"
+          }
+        },
+        {
+          "ruleId": "1-0-44",
+          "message": {
+            "text": "1-0-44 message text",
+            "markdown": "1-0-44 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 261,
+                  "endLine": 287
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab44"
+          }
+        },
+        {
+          "ruleId": "1-1-45",
+          "message": {
+            "text": "1-1-45 message text",
+            "markdown": "1-1-45 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 262,
+                  "endLine": 288
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab45"
+          }
+        },
+        {
+          "ruleId": "1-0-46",
+          "message": {
+            "text": "1-0-46 message text",
+            "markdown": "1-0-46 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 263,
+                  "endLine": 289
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab46"
+          }
+        },
+        {
+          "ruleId": "1-1-47",
+          "message": {
+            "text": "1-1-47 message text",
+            "markdown": "1-1-47 message markdown"
+          },
+          "level": "warning",
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "projects/2022-12-caviar/src/Pair.sol"
+                },
+                "region": {
+                  "startLine": 264,
+                  "endLine": 290
+                }
+              }
+            }
+          ],
+          "partialFingerprints": {
+            "id": "86dd87520e4010b150daeac6009427b47c64447ad52bc55e028925f20dd530ab47"
+          }
+        }
+      ],
+      "properties": {
+        "timestamp": "2024-03-08T11:01:00Z"
+      }
+    }
+  ]
+}
